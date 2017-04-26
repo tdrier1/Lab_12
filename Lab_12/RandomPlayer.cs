@@ -9,14 +9,13 @@ namespace Lab_12
     class RandomPlayer: Player
     { 
         public override string GetRoshambo()
-        {
+        {   //generates random number with a new seed and pull value from list of strings
             var random = new Random(Guid.NewGuid().GetHashCode());
             var game = new List<string>{"rock","paper","scissors"};
             int index = random.Next(game.Count);
-
-            string randomString = game[index];
+            string RandomString = game[index];
             
-            return randomString;
+            return RandomString;
         }
     
     }

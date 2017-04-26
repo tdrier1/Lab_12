@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab_12
 {
     class Validation
-    {
+    {   //method to make sure user inputs a correct value to run a game
         public static int GetIntWithinRange()
         {
             int Min = 1;
@@ -31,7 +31,7 @@ namespace Lab_12
             }
             return value;
         }
-
+        //makes sure user enters a value from a list to run game
         public static string InputVerifyList()
         {
             bool run = true;
@@ -53,14 +53,13 @@ namespace Lab_12
                 }
                 else
                 {
-                    Console.WriteLine("\nPlease enter: Rock, Paper or Scissors");
+                    Console.Write("\nPlease enter: Rock, Paper or Scissors!");
                 }
-
             } while (run == true);
 
             return input;
         }
-
+        //loop to continue playing
         public static bool Continue()
         {
             string conf;

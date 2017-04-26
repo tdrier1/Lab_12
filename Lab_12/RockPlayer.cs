@@ -9,7 +9,7 @@ namespace Lab_12
     class RockPlayer: Player
     {
         public override string GetRoshambo()
-        {
+        {   //method that just returns rock value
             return "rock";
         }
     }
